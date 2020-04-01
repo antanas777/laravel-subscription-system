@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a01e8a17-f07e-4996-a24f-329d001bdbb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +79,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#76#113#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,7 +123,11 @@
       <find>getFeatureRemainings</find>
       <find>$featureSlug</find>
       <find>getFeatureBySlug</find>
+      <find>rinvex/laravel</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php" />
         <option value="$PROJECT_DIR$/src/Models/PlanSubscription.php" />
         <option value="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" />
+        <option value="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" />
+        <option value="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" />
       </list>
     </option>
   </component>
@@ -200,12 +209,12 @@
       <workItem from="1585603707347" duration="309000" />
       <workItem from="1585605195773" duration="772000" />
       <workItem from="1585745903874" duration="47000" />
-      <workItem from="1585752033803" duration="2507000" />
+      <workItem from="1585752033803" duration="2648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3635000" />
+    <option name="totallyTimeSpent" value="3776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -330,8 +339,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#76#113#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
