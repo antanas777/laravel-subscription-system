@@ -130,9 +130,9 @@ class PlanSubscriptionUsage extends Model
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeByFeatureName(Builder $builder, string $featureName): Builder
+    public function scopeByFeatureName(Builder $builder, string $featureName, int $planId): Builder
     {
-        $feature = PlanFeature::where('name', $featureName)->first();
+        $feature = PlanFeature::where('name', $featureName)->where('plan_id', $planId)->first();
 
         return $builder->where('feature_id', $feature->getKey() ?? null);
     }

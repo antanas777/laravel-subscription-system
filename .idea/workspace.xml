@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a01e8a17-f07e-4996-a24f-329d001bdbb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Plan.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Plan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/PlanFeature.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/PlanFeature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/PlanSubscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/PlanSubscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +26,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/Plan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="179">
+              <caret line="254" column="36" selection-start-line="254" selection-start-column="20" selection-end-line="254" selection-end-column="36" />
+              <folding>
+                <element signature="e#73#106#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +38,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/PlanFeature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="509">
+              <caret line="63" column="15" lean-forward="true" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+              <folding>
+                <element signature="e#73#91#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4155">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="314">
+              <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
+              <folding>
+                <element signature="e#73#80#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,11 +62,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+            <state relative-caret-position="434">
+              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
               <folding>
                 <element signature="e#73#91#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -70,8 +92,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Services/Period.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="-781">
               <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Traits/HasSubscriptions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -79,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="90">
               <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
@@ -90,6 +121,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cac</find>
+      <find>getFeatureBySlug</find>
+      <find>getFeatureRemainings</find>
+      <find>$featureSlug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,11 +132,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Models/Plan.php" />
-        <option value="$PROJECT_DIR$/src/Models/PlanFeature.php" />
-        <option value="$PROJECT_DIR$/src/Models/PlanSubscription.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php" />
+        <option value="$PROJECT_DIR$/src/Models/PlanFeature.php" />
+        <option value="$PROJECT_DIR$/src/Models/Plan.php" />
         <option value="$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php" />
+        <option value="$PROJECT_DIR$/src/Models/PlanSubscription.php" />
       </list>
     </option>
   </component>
@@ -132,11 +167,6 @@
             <path>
               <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -144,6 +174,24 @@
               <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,18 +230,20 @@
       <option name="presentableId" value="Default" />
       <updated>1585603706156</updated>
       <workItem from="1585603707347" duration="309000" />
-      <workItem from="1585605195773" duration="154000" />
+      <workItem from="1585605195773" duration="772000" />
+      <workItem from="1585745903874" duration="47000" />
+      <workItem from="1585752033803" duration="1721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463000" />
+    <option name="totallyTimeSpent" value="2849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -242,10 +292,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/PlanFeature.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -258,36 +315,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/Period.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="-781">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/src/Traits/HasSubscriptions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="120">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Plan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="179">
+          <caret line="254" column="36" selection-start-line="254" selection-start-column="20" selection-end-line="254" selection-end-column="36" />
+          <folding>
+            <element signature="e#73#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/PlanFeature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="63" column="15" lean-forward="true" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+          <folding>
+            <element signature="e#73#91#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4155">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="314">
+          <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
+          <folding>
+            <element signature="e#73#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscriptionUsage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+        <state relative-caret-position="434">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="e#73#91#0#PHP" expanded="true" />
           </folding>

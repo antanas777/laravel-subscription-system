@@ -8,7 +8,6 @@ use Spatie\Sluggable\SlugOptions;
 use Rinvex\Support\Traits\HasSlug;
 use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
-use Rinvex\Support\Traits\HasTranslations;
 use Rinvex\Support\Traits\ValidatingTrait;
 use Spatie\EloquentSortable\SortableTrait;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -70,7 +69,6 @@ class Plan extends Model implements Sortable
 {
     use HasSlug;
     use SortableTrait;
-    use HasTranslations;
     use ValidatingTrait;
 
     /**
@@ -126,16 +124,6 @@ class Plan extends Model implements Sortable
     protected $observables = [
         'validating',
         'validated',
-    ];
-
-    /**
-     * The attributes that are translatable.
-     *
-     * @var array
-     */
-    public $translatable = [
-        'name',
-        'description',
     ];
 
     /**
@@ -267,6 +255,18 @@ class Plan extends Model implements Sortable
     public function getFeatureBySlug(string $featureSlug): ?PlanFeature
     {
         return $this->features()->where('slug', $featureSlug)->first();
+    }
+
+    /**
+     * Get plan feature by the given name.
+     *
+     * @param string $featureName
+     *
+     * @return \Rinvex\Subscriptions\Models\PlanFeature|null
+     */
+    public function getFeatureByName(string $featureName): ?PlanFeature
+    {
+        return $this->features()->where('name', $featureName)->first();
     }
 
     /**
