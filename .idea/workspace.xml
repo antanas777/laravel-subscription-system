@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a01e8a17-f07e-4996-a24f-329d001bdbb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -106,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="420">
+              <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -135,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/database/migrations/2020_01_01_000003_create_plan_subscriptions_table.php" />
         <option value="$PROJECT_DIR$/src/Models/PlanFeature.php" />
         <option value="$PROJECT_DIR$/src/Models/Plan.php" />
@@ -144,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/Console/Commands/RollbackCommand.php" />
         <option value="$PROJECT_DIR$/src/Console/Commands/MigrateCommand.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -169,6 +168,11 @@
               <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-subscriptions-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-subscriptions-master" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,12 +213,12 @@
       <workItem from="1585603707347" duration="309000" />
       <workItem from="1585605195773" duration="772000" />
       <workItem from="1585745903874" duration="47000" />
-      <workItem from="1585752033803" duration="2648000" />
+      <workItem from="1585752033803" duration="2677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3776000" />
+    <option name="totallyTimeSpent" value="3805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -266,13 +270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -344,6 +341,13 @@
           <folding>
             <element signature="e#76#113#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>
