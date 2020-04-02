@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a01e8a17-f07e-4996-a24f-329d001bdbb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Models/PlanPrice.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/PlanPrice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +21,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/Plan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="219" column="95" selection-start-line="219" selection-start-column="95" selection-end-line="219" selection-end-column="95" />
+            <state relative-caret-position="2565">
+              <caret line="171" column="28" lean-forward="true" selection-start-line="171" selection-start-column="28" selection-end-line="171" selection-end-column="28" />
               <folding>
                 <element signature="e#73#106#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Models/PlanPrice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+              <folding>
+                <element signature="e#73#91#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,18 +47,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
               <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="91" selection-end-column="6" />
-              <folding>
-                <element signature="e#73#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Models/PlanPrice.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
                 <element signature="e#73#91#0#PHP" expanded="true" />
               </folding>
@@ -71,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#76#113#0#PHP" expanded="true" />
               </folding>
@@ -288,12 +287,12 @@
       <workItem from="1585603707347" duration="309000" />
       <workItem from="1585605195773" duration="772000" />
       <workItem from="1585745903874" duration="47000" />
-      <workItem from="1585752033803" duration="10556000" />
+      <workItem from="1585752033803" duration="11478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11684000" />
+    <option name="totallyTimeSpent" value="12606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -397,16 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Plan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="219" column="95" selection-start-line="219" selection-start-column="95" selection-end-line="219" selection-end-column="95" />
-          <folding>
-            <element signature="e#73#106#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/PlanFeature.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -434,19 +423,9 @@
     <entry file="file://$PROJECT_DIR$/src/Providers/SubscriptionsServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#76#113#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" selection-start-line="67" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <element signature="e#73#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -461,10 +440,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/PlanSubscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" selection-start-line="67" selection-end-line="67" selection-end-column="22" />
+          <folding>
+            <element signature="e#73#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Plan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="171" column="28" lean-forward="true" selection-start-line="171" selection-start-column="28" selection-end-line="171" selection-end-column="28" />
+          <folding>
+            <element signature="e#73#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/PlanPrice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="539">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="e#73#91#0#PHP" expanded="true" />
           </folding>

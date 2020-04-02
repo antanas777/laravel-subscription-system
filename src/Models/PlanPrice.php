@@ -5,13 +5,9 @@ declare(strict_types=1);
 namespace Rinvex\Subscriptions\Models;
 
 use Carbon\Carbon;
-use Spatie\EloquentSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
-use Rinvex\Subscriptions\Services\Period;
 use Rinvex\Support\Traits\ValidatingTrait;
-use Spatie\EloquentSortable\SortableTrait;
 use Rinvex\Subscriptions\Traits\BelongsToPlan;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Rinvex\Subscriptions\Models\PlanPrice.
