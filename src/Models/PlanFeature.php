@@ -126,8 +126,8 @@ class PlanFeature extends Model implements Sortable
 
         $this->setTable(config('rinvex.subscriptions.tables.plan_features'));
         $this->setRules([
-            'plan_id' => 'required|integer|exists:'.config('rinvex.subscriptions.tables.plans').',id',
-            'slug' => 'required|alpha_dash|max:150|unique:'.config('rinvex.subscriptions.tables.plan_features').',slug',
+            'plan_id' => 'required|integer',
+            'slug' => 'required|alpha_dash|max:150',
             'name' => 'required|string|max:150',
             'description' => 'nullable|string|max:10000',
             'value' => 'required|string',
