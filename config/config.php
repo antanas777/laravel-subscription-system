@@ -11,6 +11,7 @@ return [
     'tables' => [
 
         'plans' => 'plans',
+        'plan_prices' => 'plan_prices',
         'plan_features' => 'plan_features',
         'plan_subscriptions' => 'plan_subscriptions',
         'plan_subscription_usage' => 'plan_subscription_usage',
@@ -21,6 +22,7 @@ return [
     'models' => [
 
         'plan' => \Rinvex\Subscriptions\Models\Plan::class,
+        'plan_price' => \Rinvex\Subscriptions\Models\PlanPrice::class,
         'plan_feature' => \Rinvex\Subscriptions\Models\PlanFeature::class,
         'plan_subscription' => \Rinvex\Subscriptions\Models\PlanSubscription::class,
         'plan_subscription_usage' => \Rinvex\Subscriptions\Models\PlanSubscriptionUsage::class,

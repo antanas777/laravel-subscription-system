@@ -490,6 +490,33 @@ class PlanSubscription extends Model
         $featureValue = $this->getFeatureValue($featureName);
         $usage = $this->usage()->byFeatureName($featureName, $this->plan_id)->first();
 
+        if ($usage == null) {
+            $feature = $this->plan->features()->where('name', $featureName)->first();
+
+            $usage = $this->usage()->firstOrNew([
+                'subscription_id' => $this->getKey(),
+                'feature_id' => $feature->getKey(),
+            ]);
+
+            if ($feature->resettable_period) {
+                // Set expiration date when the usage record is new or doesn't have one.
+                if (is_null($usage->valid_until)) {
+                    // Set date from subscription creation date so the reset
+                    // period match the period specified by the subscription's plan.
+                    $usage->valid_until = $feature->getResetDate($this->created_at);
+                } elseif ($usage->expired()) {
+                    // If the usage record has been expired, let's assign
+                    // a new expiration date and reset the uses to zero.
+                    $usage->valid_until = $feature->getResetDate($usage->valid_until);
+                    $usage->used = 0;
+                }
+            }
+
+            $usage->used = 0;
+            $usage->save();
+
+        }
+
         if ($featureValue === 'true') {
             return true;
         }

@@ -215,6 +215,11 @@ class Plan extends Model implements Sortable
         return $this->hasMany(config('rinvex.subscriptions.models.plan_subscription'), 'plan_id', 'id');
     }
 
+    public function prices(): HasMany
+    {
+        return $this->hasMany(config('rinvex.subscriptions.models.plan_price'), 'plan_id', 'id');
+    }
+
     /**
      * Check if plan is free.
      *
