@@ -487,7 +487,35 @@ class PlanSubscription extends Model
      */
     public function canUseFeature(string $featureName): bool
     {
+
         $featureValue = $this->getFeatureValue($featureName);
+        $usage = $this->usage()->byFeatureName($featureName, $this->plan_id)->first();
+
+        if ($featureValue === 'true') {
+            return true;
+        }
+
+        // If the feature value is zero, let's return false since
+        // there's no uses available. (useful to disable countable features)
+        if ($usage->expired() || is_null($featureValue) || $featureValue === '0' || $featureValue === 'false') {
+            return false;
+        }
+
+        // Check for available uses
+        return $this->getFeatureRemainings($featureName) > 0;
+    }
+
+    /**
+     * Get how many times the feature has been used.
+     *
+     * @param string $featureName
+     *
+     * @return int
+     */
+    public function getFeatureUsage(string $featureName): int
+
+    {
+
         $usage = $this->usage()->byFeatureName($featureName, $this->plan_id)->first();
 
         if ($usage == null) {
@@ -517,32 +545,8 @@ class PlanSubscription extends Model
 
         }
 
-        if ($featureValue === 'true') {
-            return true;
-        }
-
-        // If the feature value is zero, let's return false since
-        // there's no uses available. (useful to disable countable features)
-        if ($usage->expired() || is_null($featureValue) || $featureValue === '0' || $featureValue === 'false') {
-            return false;
-        }
-
-        // Check for available uses
-        return $this->getFeatureRemainings($featureName) > 0;
-    }
-
-    /**
-     * Get how many times the feature has been used.
-     *
-     * @param string $featureName
-     *
-     * @return int
-     */
-    public function getFeatureUsage(string $featureName): int
-    {
-        $usage = $this->usage()->byFeatureName($featureName, $this->plan_id)->first();
-
         return ! $usage->expired() ? $usage->used : 0;
+
     }
 
     /**
