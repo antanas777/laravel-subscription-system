@@ -9,6 +9,7 @@ use Rinvex\Subscriptions\Services\Period;
 use Illuminate\Database\Eloquent\Collection;
 use Rinvex\Subscriptions\Models\PlanSubscription;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Carbon\Carbon;
 
 trait HasSubscriptions
 {
@@ -91,10 +92,19 @@ trait HasSubscriptions
      *
      * @return \Rinvex\Subscriptions\Models\PlanSubscription
      */
-    public function newSubscription($subscription, Plan $plan): PlanSubscription
+    public function newSubscription($subscription, Plan $plan, $endDate = null, $startDate = null): PlanSubscription
     {
-        $trial = new Period($plan->trial_interval, $plan->trial_period, now());
-        $period = new Period($plan->invoice_interval, $plan->invoice_period, $trial->getEndDate());
+        if(is_null($startDate)){
+            $startDate = Carbon::now();
+        }
+
+        $trial = new Period($plan->trial_interval, $plan->trial_period, $startDate);
+
+        if(is_null($endDate)){
+            $endDate = $trial->getEndDate();
+        }
+
+        $period = new Period($plan->invoice_interval, $plan->invoice_period, $endDate);
 
         return $this->subscriptions()->create([
             'name' => $subscription,
