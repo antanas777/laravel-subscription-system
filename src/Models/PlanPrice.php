@@ -50,6 +50,8 @@ class PlanPrice extends Model
      * {@inheritdoc}
      */
     protected $observables = [
+        'validating',
+        'validated',
     ];
 
     /**
