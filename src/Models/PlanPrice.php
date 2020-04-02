@@ -26,6 +26,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  */
 class PlanPrice extends Model
 {
+    use BelongsToPlan;
+    use ValidatingTrait;
 
     /**
      * {@inheritdoc}
@@ -92,15 +94,5 @@ class PlanPrice extends Model
             'month' => 'required|integer',
             'price' => 'required|float',
         ]);
-    }
-
-    /**
-     * Price always belongs to a plan.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function plan(): BelongsTo
-    {
-        return $this->belongsTo(config('rinvex.subscriptions.models.plan'), 'plan_id', 'id');
     }
 }

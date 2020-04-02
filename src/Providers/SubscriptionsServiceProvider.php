@@ -6,6 +6,7 @@ namespace Rinvex\Subscriptions\Providers;
 
 use Rinvex\Subscriptions\Models\Plan;
 use Illuminate\Support\ServiceProvider;
+use Rinvex\Subscriptions\Models\PlanPrice;
 use Rinvex\Support\Traits\ConsoleTools;
 use Rinvex\Subscriptions\Models\PlanFeature;
 use Rinvex\Subscriptions\Models\PlanSubscription;
@@ -41,6 +42,9 @@ class SubscriptionsServiceProvider extends ServiceProvider
         // Bind eloquent models to IoC container
         $this->app->singleton('rinvex.subscriptions.plan', $planModel = $this->app['config']['rinvex.subscriptions.models.plan']);
         $planModel === Plan::class || $this->app->alias('rinvex.subscriptions.plan', Plan::class);
+
+        $this->app->singleton('rinvex.subscriptions.plan_price', $planFeatureModel = $this->app['config']['rinvex.subscriptions.models.plan_price']);
+        $planFeatureModel === PlanPrice::class || $this->app->alias('rinvex.subscriptions.plan_price', PlanPrice::class);
 
         $this->app->singleton('rinvex.subscriptions.plan_feature', $planFeatureModel = $this->app['config']['rinvex.subscriptions.models.plan_feature']);
         $planFeatureModel === PlanFeature::class || $this->app->alias('rinvex.subscriptions.plan_feature', PlanFeature::class);
