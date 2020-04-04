@@ -92,19 +92,18 @@ trait HasSubscriptions
      *
      * @return \Rinvex\Subscriptions\Models\PlanSubscription
      */
-    public function newSubscription($subscription, Plan $plan, $endDate = null, $startDate = null): PlanSubscription
+    public function newSubscription($subscription, Plan $plan, $startDate = null, $period = null): PlanSubscription
     {
         if(is_null($startDate)){
             $startDate = Carbon::now();
         }
 
-        $trial = new Period($plan->trial_interval, $plan->trial_period, $startDate);
-
-        if(is_null($endDate)){
-            $endDate = $trial->getEndDate();
+        if($period){
+            $plan->invoice_period = $period;
         }
 
-        $period = new Period($plan->invoice_interval, $plan->invoice_period, $endDate);
+        $trial = new Period($plan->trial_interval, $plan->trial_period, $startDate);
+        $period = new Period($plan->invoice_interval, $plan->invoice_period, $trial->getEndDate());
 
         return $this->subscriptions()->create([
             'name' => $subscription,
